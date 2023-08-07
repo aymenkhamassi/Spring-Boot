@@ -10,3 +10,14 @@
 	<h1>Hello world, with some style!</h1>
 </body>
 </html>
+
+
+
+
+<!-- for Bootstrap CSS
+<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+
+<!-- YOUR own local CSS -->
+<!-- <link rel="stylesheet" href="/css/main.css"/> -->
+<!-- For any Bootstrap that uses JS -->
+<!-- <script src="/webjars/bootstrap/js/bootstrap.min.js"></script> --> -->
