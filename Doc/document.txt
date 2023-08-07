@@ -1,0 +1,18 @@
+
+
+
+Must place  
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
+
+at the top of every JSP file for JSTL use.
+-------------------------------------------------
+
+
+
+
+
+
+Edit the src/main/resources/applications.properties file to contain the following code:
+--------------------------------------------------
+spring.mvc.view.prefix=/WEB-INF/
