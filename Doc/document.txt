@@ -24,3 +24,17 @@ spring.datasource.url=jdbc:mysql://localhost:3306/<<YOUR_SCHEMA>>
 spring.datasource.username=<<dbuser>>
 spring.datasource.password=<<dbpassword>>
 spring.jpa.hibernate.ddl-auto=update
+
+
+All
+***********************************
+
+# Where are jsp files? HERE!
+spring.mvc.view.prefix=/WEB-INF/
+# Data Persistence
+spring.datasource.url=jdbc:mysql://localhost:3306/<<YOUR_SCHEMA_NAME>>
+spring.datasource.username=root
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=update
+# For Update and Delete method hidden inputs
+spring.mvc.hiddenmethod.filter.enabled=true
