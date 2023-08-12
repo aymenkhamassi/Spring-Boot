@@ -32,13 +32,13 @@
    <tbody>
    <c:forEach items="${travelsList }" var="oneTravel" >
    <tr>
-   <td>${oneTravel.expname}</td>
+   <td><a href="/travel/${oneTravel.id }" style="text-decoration:none">${oneTravel.expname}</a></td>
    <td>${oneTravel.vendor}</td>
-   <td>${oneTravel.amount}</td>
-   <td><a href="/expenses/${oneTravel.id }/edit">Edit</a></td>
+   <td>${oneTravel.amount}</a></td>
+   <td><a href="/expenses/${oneTravel.id }/edit" style="text-decoration:none">Edit</a></td>
    <td><form action="/expenses/${oneTravel.id }" method="post">
    	<input type="hidden" name="_method" value="delete">
-    <input type="submit" value="Delete"></form></td>
+    <input type="submit" value="Delete" class="btn btn-danger"></form></td>
    </tr>
    </c:forEach>
    </tbody>

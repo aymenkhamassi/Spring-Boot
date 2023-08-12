@@ -79,7 +79,16 @@ public class TravelController {
 			return "redirect:/expenses";
 		}
 
-		
+		// DISPLAY ROUTE - Show One Expense
+		@GetMapping("/travel/{id}")
+		public String showTravel(@PathVariable("id") Long id, Model model) {
+
+			Travel oneTravel = travelServ.findTravel(id);
+			model.addAttribute("travel",oneTravel);
+
+			return "show.jsp";
+
+		}
 }
 
 
