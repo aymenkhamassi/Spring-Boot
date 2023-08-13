@@ -57,9 +57,13 @@ public class LoginController {
 	}
 	
 	@GetMapping("/welcome")
-	public String welcome() {
-		return "welcome.jsp";
-	}
+	    public String welcome(HttpSession session, Model model) {
+	        
+	        Long userId = (Long) session.getAttribute("user_id");
+	        User username = userServ.findOne(userId);
+	        model.addAttribute("username", username);
+	        return "welcome.jsp";
+	    }
 	
 
 

@@ -18,6 +18,8 @@
     <script type="text/javascript" src="/js/app.js"></script><!-- change to match your file/naming structure -->
 </head>
 <body>
-   <h1>Welcome,${username }</h1>
+    <h1>Welcome,${username.userName}</h1>
+    <p>Your Email is : ${username.email }</p>
+    <button class="btn btn-primary"><a href="/logout" style="color:white;text-decoration:none">LOGOUT</a></button>
 </body>
 </html>
